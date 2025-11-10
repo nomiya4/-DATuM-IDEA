@@ -84,30 +84,40 @@
     /* small utilities */
     .kbd{background:rgba(0,0,0,0.25);padding:4px 8px;border-radius:6px;font-weight:700}
 
-  </style>
-</head>
-<body>
-  <div class="wrap">
-    <header>
-      <div class="brand">
-        <div class="logo">DI</div>
-        <div>
-          <div style="font-weight:700">DATuM IDEA — Sample</div>
-          <div class="muted" style="font-size:13px">疑似サイトテンプレート</div>
-        </div>
-      </div>
-
-      <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#works">Works</a>
-        <a href="#contact" class="cta">Contact</a>
-      </nav>
-
-      <div class="mobile-nav" style="display:none">
-        <button id="menuBtn" aria-expanded="false" aria-controls="mnav" style="background:none;border:1px solid rgba(255,255,255,0.04);padding:8px;border-radius:8px;color:var(--muted)">Menu</button>
-      </div>
-    </header>
+<script>
+ window.difyChatbotConfig = {
+  token: 'l0PWjNRnDIy71APN',
+  baseUrl: 'http://13.220.97.50',
+  inputs: {
+    // You can define the inputs from the Start node here
+    // key is the variable name
+    // e.g.
+    // name: "NAME"
+  },
+  systemVariables: {
+    // user_id: 'YOU CAN DEFINE USER ID HERE',
+    // conversation_id: 'YOU CAN DEFINE CONVERSATION ID HERE, IT MUST BE A VALID UUID',
+  },
+  userVariables: {
+    // avatar_url: 'YOU CAN DEFINE USER AVATAR URL HERE',
+    // name: 'YOU CAN DEFINE USER NAME HERE',
+  },
+ }
+</script>
+<script
+ src="http://13.220.97.50/embed.min.js"
+ id="l0PWjNRnDIy71APN"
+ defer>
+</script>
+<style>
+  #dify-chatbot-bubble-button {
+    background-color: #1C64F2 !important;
+  }
+  #dify-chatbot-bubble-window {
+    width: 24rem !important;
+    height: 40rem !important;
+  }
+</style> 
 
     <main>
       <section class="hero">
