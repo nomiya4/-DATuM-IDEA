@@ -211,42 +211,6 @@
           <p style="margin-top:12px"><a href="mailto:hello@example.com" class="cta">hello@example.com</a></p>
         </div>
       </section>
-
-    </main>
-
-    <footer>
-      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
-        <div class="muted">© DATuM IDEA — Sample Template</div>
-        <div class="links">
-          <a class="muted" href="#">Privacy</a>
-          <a class="muted" href="#">Terms</a>
-        </div>
-      </div>
-    </footer>
-  </div>
-
-  <script>
-    // Mobile menu simple toggle
-    const menuBtn = document.getElementById('menuBtn')
-    if(menuBtn){
-      menuBtn.addEventListener('click',()=>{
-        const expanded = menuBtn.getAttribute('aria-expanded') === 'true'
-        menuBtn.setAttribute('aria-expanded', String(!expanded))
-        // Basic behaviour: show a prompt nav via alert for demo
-        const items = ['About','Services','Works','Contact']
-        const choice = prompt('Navigate to: (type) ' + items.join(' / '))
-        if(choice){
-          const key = choice.toLowerCase()
-          if(key.includes('about')) location.hash = '#about'
-          if(key.includes('work')) location.hash = '#works'
-          if(key.includes('contact')) location.hash = '#contact'
-        }
-      })
-    }
-  </script>
-</body>
-</html>
-
 <script>
  window.difyChatbotConfig = {
   token: 'l0PWjNRnDIy71APN',
@@ -281,3 +245,37 @@
     height: 40rem !important;
   }
 </style>
+    </main>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div class="muted">© DATuM IDEA — Sample Template</div>
+        <div class="links">
+          <a class="muted" href="#">Privacy</a>
+          <a class="muted" href="#">Terms</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Mobile menu simple toggle
+    const menuBtn = document.getElementById('menuBtn')
+    if(menuBtn){
+      menuBtn.addEventListener('click',()=>{
+        const expanded = menuBtn.getAttribute('aria-expanded') === 'true'
+        menuBtn.setAttribute('aria-expanded', String(!expanded))
+        // Basic behaviour: show a prompt nav via alert for demo
+        const items = ['About','Services','Works','Contact']
+        const choice = prompt('Navigate to: (type) ' + items.join(' / '))
+        if(choice){
+          const key = choice.toLowerCase()
+          if(key.includes('about')) location.hash = '#about'
+          if(key.includes('work')) location.hash = '#works'
+          if(key.includes('contact')) location.hash = '#contact'
+        }
+      })
+    }
+  </script>
+</body>
+</html>
